@@ -1,0 +1,16 @@
+<div class="container">
+
+    <!-- Searchform directive -->
+    <search-form></search-form>
+
+    <!-- Searchresult directive -->
+    <search-result></search-result>
+
+    <!-- Feedback -->
+    <div class="alert alert-info" ng-show="showInfo">
+        <strong>Info!</strong> {{feedback}}
+    </div>
+    <div class="alert alert-danger" ng-show="showError">
+        <strong>Oops!</strong> {{feedback}}
+    </div>
+</div>

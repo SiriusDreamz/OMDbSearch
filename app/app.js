@@ -1,14 +1,24 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'myApp.view1',
-  'myApp.view2',
-  'myApp.version'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
+/* Global variables */
+var Global_OMDb_API = {};
+Global_OMDb_API.url = 'http://www.omdbapi.com/?s=';
+Global_OMDb_API.key = '62171b8b';
 
-  $routeProvider.otherwise({redirectTo: '/view1'});
-}]);
+var OMDbSearch = angular.module("OMDbSearch", [
+    'ngRoute'
+]);
+
+OMDbSearch.config(function($routeProvider, $locationProvider) {
+    /* Routing */
+    $routeProvider
+        .when('/', {
+            controller: 'SearchCtrl',
+            templateUrl: 'views/templates/search.html'
+        })
+        .otherwise({
+            redirectTo: '/'
+        })
+
+    $locationProvider.html5Mode(true).hashPrefix('!');
+});
