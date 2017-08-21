@@ -23,11 +23,26 @@ body {
         background: -moz-linear-gradient(top, rgba($OMDb-grey, 1) 0%, rgba($OMDb-black, 1) 100%);
         background: -webkit-linear-gradient(top, rgba($OMDb-grey, 1) 0%,rgba($OMDb-black, 1) 100%);
         background: linear-gradient(to bottom, rgba($OMDb-grey, 1) 0%,rgba($OMDb-black, 1) 100%);
+        position: relative;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
         @include flexbox;
         @include justify(center);
 
         h1 {
             color: $OMDb-white;
+        }
+
+        &:after,
+        &:before {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            top: 50%;
+            bottom: 0;
+            left: 10px;
+            right: 10px;
+            border-radius: 250px / 10px;
         }
     }
 }
