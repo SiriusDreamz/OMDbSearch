@@ -8,8 +8,8 @@
                         <i class="fa fa-film" aria-hidden="true"></i>
                     </p>
                 </th>
-                <th class="t-header align sortable">
-                    <div class="th-wrapper" ng-click="sortType = 'Title'; sortReverse = !sortReverse">
+                <th class="t-header align sortable" ng-click="sortType = 'Title'; sortReverse = !sortReverse">
+                    <div class="th-wrapper">
                         <span ng-show="sortType == 'Title' && !sortReverse" class="fa fa-caret-down"></span>
                         <span ng-show="sortType == 'Title' && sortReverse" class="fa fa-caret-up"></span>
                         <p class="th-text">
@@ -17,8 +17,8 @@
                         </p>
                     </div>
                 </th>
-                <th class="t-header align sortable">
-                    <div class="th-wrapper" ng-click="sortType = 'Year'; sortReverse = !sortReverse">
+                <th class="t-header align sortable" ng-click="sortType = 'Year'; sortReverse = !sortReverse">
+                    <div class="th-wrapper">
                         <span ng-show="sortType == 'Year' && !sortReverse" class="fa fa-caret-down"></span>
                         <span ng-show="sortType == 'Year' && sortReverse" class="fa fa-caret-up"></span>
                         <p class="th-text">
