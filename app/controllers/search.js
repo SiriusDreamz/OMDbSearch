@@ -3,7 +3,7 @@
 /**
  * AngularJS Controller - SearchCtrl
  */
-OMDbSearch.controller('SearchCtrl', ['$scope', 'SearchFactory', function($scope, SearchFactory) {
+OMDbSearch.controller('SearchCtrl', ['$scope', function($scope) {
     /* The movie search result list */
     $scope.searchResultList = [];
 
