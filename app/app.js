@@ -9,6 +9,7 @@ var OMDbSearch = angular.module("OMDbSearch", [
     'ngRoute'
 ]);
 
+/* App configurations */
 OMDbSearch.config(function($routeProvider, $locationProvider) {
     /* Routing */
     $routeProvider

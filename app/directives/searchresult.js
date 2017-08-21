@@ -1,5 +1,5 @@
 /**
- * The Searchresult directive
+ * AngularJS Directive - SearchResult
  */
 OMDbSearch.directive('searchResult', function() {
     /* The directive controller */

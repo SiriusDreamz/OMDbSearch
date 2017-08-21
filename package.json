@@ -1,7 +1,7 @@
 {
     "name": "OMDbSearch",
     "description": "A search page based on the OMDb API",
-    "repository": "",
+    "repository": "https://github.com/SiriusDreamz/OMDbSearch.git",
     "devDependencies": {
         "bower": "^1.7.7",
         "http-server": "^0.9.0",

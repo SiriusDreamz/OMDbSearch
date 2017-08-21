@@ -1,3 +1,6 @@
+/**
+ * AngularJS Factory - SearchFactory
+ */
 angular.module('OMDbSearch')
     .factory('SearchFactory', ['$http', function($http) {
         return {
@@ -10,11 +13,13 @@ angular.module('OMDbSearch')
                     method: 'GET',
                     url: url
                 }).then(function successCallback(response) {
+                    /* If the response return false there is no searchresult */
                     if (response.data.Response === 'False') {
                         return 'noResult';
                     }
                     return response;
                 }, function errorCallback(response) {
+                    /* Always return error on errorCallback */
                     return 'error';
                 });
             }

@@ -2,7 +2,7 @@
   "name": "OMDbSearch",
   "description": "A search page based on the OMDb API",
   "version": "1.0.0",
-  "homepage": "",
+  "homepage": "https://github.com/SiriusDreamz/OMDbSearch",
   "dependencies": {
     "angular": "~1.5.0",
     "angular-route": "~1.5.0",

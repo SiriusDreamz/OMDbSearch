@@ -1,5 +1,5 @@
 /**
- * The Searchform directive
+ * AngularJS Directive - SearchForm
  */
 OMDbSearch.directive('searchForm', function() {
     /* The directive controller */
