@@ -4,8 +4,7 @@
 
 # Getting started
 
-Clone the repository here: [SiriusDreamz]
-
+- Clone the repository.
 - Open you CLI of choise (for example [GitBash](https://git-scm.com/): and navigate to where you cloned the project.
 - In the command line interface, run (npm will run $ npm install as a dependency on $ npm start to make sure the dependencies are installed):
     ```sh
